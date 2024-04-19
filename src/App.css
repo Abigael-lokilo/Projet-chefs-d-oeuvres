@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3spx;
+}
+li{
+  list-style: none;
+}
+.header-btn{
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+/* nav .logo{ */
+  /* width: 10rem; */
+  /* cursor: pointer; */
+/* } */
+
+.conteneur-colonne {
+  display: flex;
+  flex-direction: column; /* Disposition en colonne */
+  align-items: flex-start; /* Alignement à gauche */
+  width: 250px; /* Largeur fixe pour la colonne */
+  margin: 0 auto; /* Centrer la colonne horizontalement */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.conteneur-ligne {
+  display: flex;
+  flex-direction: row; /* Disposition en ligne */
+  justify-content: space-between; /* Distribuer l'espace entre les éléments */
+  align-items: center; /* Aligner verticalement au centre */
+  width: 100%; /* Prendre toute la largeur disponible */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+Nav.logo {
+  
+  width: 100px;
+  height: auto;
 }
 
-.card {
-  padding: 2em;
+.lien-page-accueil {
+  font-weight: bold;
 }
 
-.read-the-docs {
-  color: #888;
+.taches, .invites, .salles, .calendrier {
+  margin-right: 10px; /* Espace entre les éléments */
 }
+
