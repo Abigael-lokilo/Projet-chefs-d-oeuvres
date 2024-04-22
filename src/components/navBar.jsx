@@ -1,7 +1,7 @@
 function Nav() {
   return (
     <>
-      <header class="bg-white shadow-md">
+      <header class="header">
         <div class="container mx-auto flex items-center justify-between py-7">
           <a href="/" class="text-3xl font-bold text-gray-800">
             <img
@@ -31,15 +31,15 @@ function Nav() {
               </li>
               <li>
                 <a
-                  href="/invites"
+                  href="/listedesinvités"
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
-                  Listes d'invites
+                  Liste des ninvités
                 </a>
               </li>
               <li>
                 <a
-                  href="/invites"
+                  href="/Salles"
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Salles
@@ -47,18 +47,18 @@ function Nav() {
               </li>
               <li>
                 <a
-                  href="/invites"
+                  href="/login"
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
-                  Calendrier
+                  Login
                 </a>
               </li>
               <li>
                 <a
-                  href="/invites"
+                  href="/signup"
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
-                  Contact
+                  Sign Up
                 </a>
               </li>
             </ul>

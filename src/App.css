@@ -3,24 +3,20 @@
 @tailwind utilities;
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3spx;
+  background-color: bisque;
 }
-li{
+li {
   list-style: none;
 }
-.header-btn{
+.header-btn {
   gap: 5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 /* nav .logo{ */
-  /* width: 10rem; */
-  /* cursor: pointer; */
+/* width: 10rem; */
+/* cursor: pointer; */
 /* } */
 
 .conteneur-colonne {
@@ -48,7 +44,6 @@ li{
 }
 
 Nav.logo {
-  
   width: 100px;
   height: auto;
 }
@@ -57,7 +52,146 @@ Nav.logo {
   font-weight: bold;
 }
 
-.taches, .invites, .salles, .calendrier {
+.taches,
+.invites,
+.salles,
+.calendrier {
   margin-right: 10px; /* Espace entre les éléments */
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  margin: 10px 0;
+  background-color: black;
+  border: O;
+  height: 1px;
+  width: 100%;
+}
+
+.name-field {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.name-field div {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-field div {
+  width: 49%;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+input {
+  margin-bottom: 6px;
+  padding: 5px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+  outline: darksalmon;
+  border: 1px solid bisque;
+}
+
+input [type="submit"] {
+  margin-top: 15px;
+  background-color: black;
+  color: bisque;
+  border: 1px solid bisque;
+  cursor: pointer;
+}
+p {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+p a {
+  text-decoration: black;
+  color: bisque;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: bisque;
+  border-radius: 3px;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+input [type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: aquamarine;
+  color: bisque;
+  font-size: 18px;
+}
+
+p {
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.para-2 {
+  text-align: center;
+  color: bisque;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+para-2 a {
+  color: bisque;
+}
