@@ -2,7 +2,7 @@ function Nav() {
   return (
     <>
       <header class="header">
-        <div class="container mx-auto flex items-center justify-between py-7">
+        <div class="container  mx-auto flex items-center justify-between py-7">
           <a href="/" class="text-3xl font-bold text-gray-800">
             <img
               src="src/components/Wedding Planning By Lkl (1).png"
@@ -47,6 +47,15 @@ function Nav() {
               </li>
               <li>
                 <a
+                  href="/calendrier"
+                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                >
+                  Calendrier
+                </a>
+              </li>
+
+              <li>
+                <a
                   href="/login"
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
@@ -59,6 +68,15 @@ function Nav() {
                   class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Sign Up
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contact"
+                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                >
+                  Contact
                 </a>
               </li>
             </ul>

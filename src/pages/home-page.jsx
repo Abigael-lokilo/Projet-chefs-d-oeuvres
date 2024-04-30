@@ -1,5 +1,7 @@
 import HeroSection from "../components/heroSection";
 import Nav from "../components/navBar";
+import Accueil from "../components/Accueil";
+import Footer from "../components/footer";
 
 function Home() {
   return (
@@ -7,6 +9,8 @@ function Home() {
       <div>
         <Nav />
         <HeroSection />
+
+        <Footer />
       </div>
     </>
   );

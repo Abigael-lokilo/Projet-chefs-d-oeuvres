@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --pink: #ef5777;
+  --white: #fff;
+  --black: #222;
+  --transparent-white: rgba(255, 255, 255, 0.3);
+  --border: 0.2rem solid var(--black);
+  --box-shadow: 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: O;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
 header {
-  background-color: bisque;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 li {
   list-style: none;
@@ -14,6 +35,7 @@ li {
   flex-direction: row;
   justify-content: flex-end;
 }
+
 /* nav .logo{ */
 /* width: 10rem; */
 /* cursor: pointer; */
@@ -104,14 +126,14 @@ input {
 
 input:focus {
   outline: darksalmon;
-  border: 1px solid bisque;
+  border: 1px solid pink;
 }
 
 input [type="submit"] {
   margin-top: 15px;
-  background-color: black;
-  color: bisque;
-  border: 1px solid bisque;
+  background-color: white;
+  color: pink;
+  border: 1px solid pink;
   cursor: pointer;
 }
 p {
@@ -121,8 +143,8 @@ p {
 }
 
 p a {
-  text-decoration: black;
-  color: bisque;
+  text-decoration: white;
+  color: red;
 }
 
 p a:hover {
@@ -133,7 +155,7 @@ p a:hover {
   width: 360px;
   height: 620px;
   margin: auto;
-  background-color: bisque;
+  background-color: green;
   border-radius: 3px;
 }
 
@@ -142,7 +164,7 @@ p a:hover {
   height: 280px;
   margin: auto;
   border-radius: 3px;
-  background-color: bisque;
+  background-color: green;
 }
 
 h1 {
@@ -175,7 +197,7 @@ input [type="button"] {
   margin-top: 20px;
   border: none;
   background-color: aquamarine;
-  color: bisque;
+  color: black;
   font-size: 18px;
 }
 
@@ -187,11 +209,320 @@ p {
 
 .para-2 {
   text-align: center;
-  color: bisque;
+  color: white;
   font-size: 15px;
   margin-top: -10px;
 }
 
 para-2 a {
+  color: var(--pink);
+}
+
+.app-header {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-add {
+  margin: 3em 0 1em 0;
+  width: 281px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 18px;
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  gap: 10px;
+  cursor: pointer;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+  font-size: 25px;
+  font-weight: 700;
+  transition: color ease-in-out 250ms;
+}
+
+.btn-add:hover {
+  background-color: var(--primary-color);
   color: bisque;
+  text-shadow: none;
+}
+
+.task-creation-component {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task-creation-component.active {
+  display: flex;
+}
+
+.task-creation-component.activating {
+  -webkit-animation: slide-in-top 250ms;
+}
+
+.task-creation-component.desactivating {
+}
+
+.task-creation-component.already-active {
+}
+
+.task-creation-component .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.task-creation-component .row input {
+  width: auto;
+  flex-grow: 1;
+  border-radius: 18px;
+  background-color: var(--gray-color);
+  border: 1px solid #dedede;
+  padding: 0.75em;
+}
+
+.task-creation-component .row-icon {
+  font-size: 28px;
+  width: 60px;
+  line-height: auto;
+  display: flex;
+  justify-content: center;
+}
+.task-creation-component .row row-actions {
+  justify-content: flex-end;
+}
+
+.task-creation-component .row-actions button {
+  padding: 0.5em;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.task-creation-component .row-actions button.btn-create {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.task-creation-component .row-actions button.btn-create:hover {
+  background: var(--primary-color);
+  color: bisque;
+}
+
+.task-creation-component .row-actions button.btn-cancel:hover {
+  background: var(--danger-color);
+  color: bisque;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#todosList {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+.app-content .task {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1em;
+  width: 100%;
+  padding: 1em;
+  background: bisque;
+  border-radius: 18px;
+  box-shadow: Opx 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.app-content .task.task-deleting {
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room {
+  width: 300px; /* Ajuster la largeur selon vos besoins */
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Arrondir les coins pour un look plus moderne */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre portée subtile */
+}
+
+.room-image {
+  height: 150px; /* Ajuster la hauteur selon vos besoins */
+  overflow: hidden; /* Masquer les débordements d'image */
+  border-radius: 10px 10px 0 0; /* Arrondir le haut des coins de l'image */
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintenir le rapport hauteur/largeur et remplir l'espace disponible */
+}
+
+.room-info {
+  padding: 15px;
+  display: flex; /* Afficher les informations de la salle sur une ligne horizontale */
+  flex-direction: column; /* Afficher les informations de la salle verticalement */
+  align-items: flex-start; /* Aligner les éléments de la salle à gauche */
+}
+
+.room-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.room-info p {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1.5; /* Augmenter l'espacement entre les lignes pour une meilleure lisibilité */
+}
+
+.btn {
+  display: block;
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajouter une transition pour un effet de survol fluide */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.Salles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-one,
+.container-two {
+  width: 20%;
+}
+
+.voir {
+  flex-wrap: wrap;
+}
+
+.phpto-1,
+.photo-2,
+.photo-3,
+.photo-4,
+.photo-5 {
+  width: 100%;
+}
+
+.contact {
+  max-width: 20px;
+  max-height: 150px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.decouvrir {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(bg.jpg);
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+.calendar {
+  width: 300px;
+  height: auto;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.calendar .image {
+  width: 100%;
+  height: 200px;
+  background: url(img.jpg);
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.calendar .image h2,
+.calendar .image h3 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.calendar .date {
+  font-weight: 500;
+}
+
+.calendar .date {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar .date div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  color: green;
+}
+
+.calendar .date div.day {
+  font-weight: 700;
+}
+
+.calendar .date div.day:first-child,
+.calendar .date div.number:nth-child(7n + 1) {
+  color: red;
+}
+.calendar .date div.number.active {
+  background: #ef5777;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
 }
