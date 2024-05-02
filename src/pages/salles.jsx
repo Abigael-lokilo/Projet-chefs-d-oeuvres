@@ -3,16 +3,7 @@ function Salles() {
   return (
     <>
       <section class="green py-0 px-0">
-        <div class="relative w-full h-48">
-          <img
-            src="/assets/pexels-thalia-kensinger-794879652-19492897.jpg"
-            alt="Your Image"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black/50 flex justify-center items-center text-white text-4xl font-bold">
-            Salles
-          </div>
-        </div>
+        <h1 class="text-2xl font-bold text-center mb-4">salles</h1>
         <div className="Salles">
           <div className="container-one">
             <div className="room-image">

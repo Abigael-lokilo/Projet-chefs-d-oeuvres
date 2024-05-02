@@ -1,15 +1,13 @@
 import HeroSection from "../components/heroSection";
-import Nav from "../components/navBar";
-import Accueil from "../components/Accueil";
+import NavBar from "../components/navBar";
 import Footer from "../components/footer";
 
 function Home() {
   return (
     <>
       <div>
-        <Nav />
+        <NavBar />
         <HeroSection />
-
         <Footer />
       </div>
     </>

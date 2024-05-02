@@ -1,22 +1,22 @@
-function Nav() {
+function NavBar() {
   return (
     <>
       <header class="header">
         <div class="container  mx-auto flex items-center justify-between py-7">
           <a href="/" class="text-3xl font-bold text-gray-800">
             <img
-              src="src/components/Wedding Planning By Lkl (1).png"
+              src="assets/Wedding Planning By Lkl (1).png"
               alt=""
-              className="w-10 h-20"
+              className=" h-20"
             />
           </a>
 
           <nav>
-            <ul class=" flex items-center">
+            <ul className=" flex items-center">
               <li>
                 <a
                   href="/"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Accueil
                 </a>
@@ -24,7 +24,7 @@ function Nav() {
               <li>
                 <a
                   href="/taches"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Tâches
                 </a>
@@ -32,7 +32,7 @@ function Nav() {
               <li>
                 <a
                   href="/listedesinvités"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Liste des ninvités
                 </a>
@@ -40,7 +40,7 @@ function Nav() {
               <li>
                 <a
                   href="/Salles"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Salles
                 </a>
@@ -48,7 +48,7 @@ function Nav() {
               <li>
                 <a
                   href="/calendrier"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Calendrier
                 </a>
@@ -57,7 +57,7 @@ function Nav() {
               <li>
                 <a
                   href="/login"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Login
                 </a>
@@ -65,7 +65,7 @@ function Nav() {
               <li>
                 <a
                   href="/signup"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Sign Up
                 </a>
@@ -74,7 +74,7 @@ function Nav() {
               <li>
                 <a
                   href="/contact"
-                  class="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
+                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
                 >
                   Contact
                 </a>
@@ -87,4 +87,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavBar;
