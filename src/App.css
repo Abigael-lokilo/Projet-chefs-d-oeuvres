@@ -379,3 +379,7 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+.carousel-image {
+  width: 50%;
+  height: auto;
+}

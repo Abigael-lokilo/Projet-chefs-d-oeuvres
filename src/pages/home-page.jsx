@@ -1,15 +1,14 @@
 import HeroSection from "../components/heroSection";
-import NavBar from "../components/navBar";
-import Footer from "../components/footer";
+// import NavBar from "../components/navBar";
+// import Footer from "../components/footer";
+import Layout from "./layout";
 
 function Home() {
   return (
     <>
-      <div>
-        <NavBar />
+      <Layout>
         <HeroSection />
-        <Footer />
-      </div>
+      </Layout>
     </>
   );
 }

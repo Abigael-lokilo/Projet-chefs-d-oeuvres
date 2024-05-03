@@ -1,49 +1,57 @@
-import imageHero from "/assets/pexels-jeremy-wong-1026390.jpg";
-
-function HeroSection() {
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+const HeroSection = () => {
   return (
-    <div className="relative">
-      <img alt="" className="" />
-
-      <div
-        className={`p-20 text-lg bg-[url('assets/pexels-burak-evlivan-159589296-11669423.jpg')]`}
+    <section className="text-white text-center py-0 font-bold">
+      <Carousel
+        showArrows={false}
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop
+        autoPlay={false}
+        interval={3000}
+        carouselClass="custom-carousel"
+        itemClasse="custom-carousel-item"
       >
-        <h1 className="text-5xl  text-white ">
-          Bienvenu(e) chez Wedding Planning by lkl
-        </h1>
-        <p>
-          Votre compagnon de mariage pour la plannification de mariage! Nous
-          sommes ravie de vous accueillir dans notre communauté dédiée à faire
-          de votre grand jour un moment inoubliable
-        </p>
-
-        <button
-          id="commencer"
-          class="bg-green-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
+        <div
+          className="bg-cover bg-center bg-opacity-90 bg-black h-screen flex items-center justify-center"
+          style={{
+            backgroundImage:
+              "url('https://images.pexels.com/photos/15157843/pexels-photo-15157843/free-photo-of-mains-bijoux-accessoires-alliance.jpeg?auto=compress&cs=tinysrgb&w=600')",
+          }}
         >
-          Commencer
-        </button>
-      </div>
+          <h1 className="text-2xl md:text-4xl">
+            Un mariage inoubliable, une ambiance de folie, des souvenirs plein
+            la tête.
+          </h1>
+        </div>
 
-      <h1 class="text-2xl font-bold text-center mb-4">
-        A propos de wedding Planning
-      </h1>
-
-      <div class="flex flex-row items-center">
-        <img
-          src="assets/pexels-n-voitkevich-4943483.jpg"
-          alt="Votre image"
-          class="w-60 h-60"
-        />
-        <p>
-          Wedding Planning est un organisateur d'événements spécialisé dans les
-          mariages. Il agit comme un chef d'orchestre, supervisant tous les
-          aspects de la préparation du mariage, des premiers rendez-vous
-          jusqu'au jour J
-        </p>
-      </div>
-    </div>
+        <div
+          className="bg-cover bg-center bg-opacity-90  h-screen flex items-center justify-center"
+          style={{
+            backgroundImage:
+              "url('https://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&w=600')",
+          }}
+        >
+          <h1 className="text-2xl md:text-4xl">
+            Une promesse d'amour sacrée, une union bénie par le destin.
+          </h1>
+        </div>
+        <div
+          className="bg-cover bg-center bg-opacity-50 h-screen flex items-center justify-center"
+          style={{
+            backgroundImage:
+              "url('https://images.pexels.com/photos/11669423/pexels-photo-11669423.jpeg?auto=compress&cs=tinysrgb&w=600')",
+          }}
+        >
+          <h1 className="text-2xl md:text-4xl bg-opacity-50">
+            Un nouveau départ, une vie commune sous le signe de l'amour et du
+            respect.
+          </h1>
+        </div>
+      </Carousel>
+    </section>
   );
-}
-
+};
 export default HeroSection;
