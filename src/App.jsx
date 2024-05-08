@@ -10,7 +10,7 @@ import Salles from "./pages/salles";
 import Voir from "./pages/voir";
 import Calendrier from "./pages/calendrier";
 import Contact from "./pages/contact";
-import Decouvrir from "./pages/decouvrir";
+import Accueil from "./pages/Accueil";
 import { Children } from "react";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path="/voir" element={<Voir />}></Route>
           <Route path="/calendrier" element={<Calendrier />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/decouvrir" element={<Decouvrir />}></Route>
+          <Route path="/accueil" element={<Accueil />}></Route>
         </Routes>
       </BrowserRouter>
     </>

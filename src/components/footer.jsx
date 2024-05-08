@@ -3,11 +3,16 @@ function Footer() {
     <>
       <footer>
         <div class="footer">
-          <img
-            src="/assets/Wedding Planning By Lkl (1).png"
-            alt="Your Logo"
-            class="h-20 mr-4"
-          />
+          <a
+            href="/"
+            class=" text-3xl font-bold text-gray-800absolute top-0 right-0s"
+          >
+            <img
+              src="assets/Wedding Planning By Lkl (1).png"
+              alt=""
+              className=" h-25"
+            />
+          </a>
           <nav class="space-x-4">
             <h2>liens rapides</h2>
             <a href="#" class=" flex text-black text-sm hover:text-gray-300">

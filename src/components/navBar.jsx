@@ -1,18 +1,21 @@
 function NavBar() {
   return (
     <div>
-      <header className=" border-2 border-red-500">
+      <header className=" border-2 border-black-500">
         <div className="container  mx-auto flex items-center justify-between py-7">
-          <a href="/" class="text-3xl font-bold text-gray-800">
+          <a
+            href="/"
+            class=" text-3xl font-bold text-gray-800absolute top-0 right-0s"
+          >
             <img
               src="assets/Wedding Planning By Lkl (1).png"
               alt=""
-              className=" h-20"
+              className=" h-24"
             />
           </a>
 
           <nav>
-            <ul className=" flex items-center">
+            <ul className=" bg-white-500 h-16 md:h-20 lg:h-24 flex justify-between items-center">
               <li>
                 <a
                   href="/"
