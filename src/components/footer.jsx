@@ -14,7 +14,7 @@ function Footer() {
             />
           </a>
           <nav class="space-x-4">
-            <h2>liens rapides</h2>
+            <h1 class="text-1xl font-bold text-center mb-4">lien rapides</h1>
             <a href="#" class=" flex text-black text-sm hover:text-gray-300">
               Accueil
             </a>
@@ -43,7 +43,7 @@ function Footer() {
           <div>
             <a href="#" class=" flex text-black text-sm hover:text-gray-300">
               <div class="contact">
-                <h2>Réseaux</h2>
+                <h1 class="text-1xl font-bold text-center mb-4">Réseaux</h1>
                 <a href="#">
                   <img src="src/assets/logo fac.png" alt="" />
                   Facebook

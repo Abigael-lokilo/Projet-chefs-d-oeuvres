@@ -23,7 +23,7 @@ const HeroSection = () => {
                 "url('https://images.pexels.com/photos/4943483/pexels-photo-4943483.jpeg?auto=compress&cs=tinysrgb&w=800')",
             }}
           >
-            <h1 className="text-10xl md:text-4xl">
+            <h1 className="text-20xl md:text-6xl">
               Bienvenu(e) chez wedding planning by lkl
             </h1>
           </div>
@@ -53,6 +53,7 @@ const HeroSection = () => {
           </div>
         </Carousel>
       </div>
+      <p>g</p>
     </section>
   );
 };
