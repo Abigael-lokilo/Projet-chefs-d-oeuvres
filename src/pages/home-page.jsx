@@ -1,14 +1,17 @@
 import HeroSection from "../components/heroSection";
-// import NavBar from "../components/navBar";
-// import Footer from "../components/footer";
-import Layout from "./layout";
+
+import Baner from "../components/baner";
+import Footer from "../components/footer";
 
 function Home() {
   return (
     <>
-      <Layout>
+      <div>
         <HeroSection />
-      </Layout>
+
+        <Baner />
+        <Footer />
+      </div>
     </>
   );
 }

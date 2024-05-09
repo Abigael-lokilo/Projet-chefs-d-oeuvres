@@ -1,60 +1,45 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const HeroSection = () => {
   return (
-    <section className="text-white text-center py-0 font-bold relative">
-      <h1 className="text-2xl md:text-4xl bg-black bg-opacity-50 py-4 absolute top-0 left-0 right-0 z-10">
-        Votre en-tête ici
-      </h1>
-      <div style={{ marginTop: "70px" }}>
-        <Carousel
-          showArrows={false}
-          showStatus={false}
-          showThumbs={false}
-          infiniteLoop
-          autoPlay
-        >
-          <div
-            className="bg-cover bg-center bg-opacity-90 bg-black bg-center h-screen flex items-center justify-center relative z-0"
-            style={{
-              backgroundImage:
-                "url('https://images.pexels.com/photos/4943483/pexels-photo-4943483.jpeg?auto=compress&cs=tinysrgb&w=800')",
-            }}
-          >
-            <h1 className="text-20xl md:text-6xl">
-              Bienvenu(e) chez wedding planning by lkl
-            </h1>
+    <div className="container mx-auto py-20">
+      {" "}
+      {/* Augmenter le padding pour laisser de la place à la navBar */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+        <div className="flex justify-center items-center">
+          <div className="rounded-full overflow-hidden bg-white text-center w-48 h-48">
+            {" "}
+            {/* Définir une taille spécifique pour les images rondes */}
+            <img
+              className="object-cover w-full h-full"
+              src="assets/pexels-burak-evlivan-159589296-11669423.jpg"
+              alt="Image de mariage"
+            />
           </div>
+        </div>
 
-          <div
-            className="bg-cover bg-center bg-opacity-90 bg-center bg-opacity-75 h-screen flex items-center justify-center relative z-0"
-            style={{
-              backgroundImage:
-                "url('https://images.pexels.com/photos/11988914/pexels-photo-11988914.jpeg?auto=compress&cs=tinysrgb&w=800')",
-            }}
-          >
-            <h1 className="text-2xl md:text-4xl">
-              Une promesse d'amour sacrée, une union bénie par le destin.
-            </h1>
+        <div className="flex flex-col justify-center text-center px-5">
+          {" "}
+          {/* Ajouter du padding intérieur pour l'espace */}
+          <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
+            Bienvenue chez
+          </h1>
+          <h1 className="text-5xl font-semibold">Wedding Planning</h1>
+        </div>
+
+        <div className="flex justify-center items-center">
+          <div className="rounded-full overflow-hidden bg-white text-center w-48 h-48">
+            {" "}
+            {/* Taille cohérente avec le premier */}
+            <img
+              className="object-cover w-full h-full"
+              src="assets/pexels-burak-evlivan-159589296-11669423.jpg"
+              alt="Image de mariage"
+            />
           </div>
-          <div
-            className="bg-cover bg-center bg-opacity-50 h-screen flex items-center justify-center relative z-0"
-            style={{
-              backgroundImage:
-                "url('https://images.pexels.com/photos/2892215/pexels-photo-2892215.jpeg?auto=compress&cs=tinysrgb&w=800')",
-            }}
-          >
-            <h1 className="text-2xl md:text-4xl bg-opacity-50">
-              Un nouveau départ, une vie commune sous le signe de l'amour et du
-              respect.
-            </h1>
-          </div>
-        </Carousel>
+        </div>
       </div>
-      <p>g</p>
-    </section>
+    </div>
   );
 };
 

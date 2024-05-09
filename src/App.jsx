@@ -1,7 +1,7 @@
 import Nav from "./components/navBar";
 import Home from "./pages/home-page";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Taches from "./pages/taches";
 import Login from "./pages/login";
 import SignUp from "./pages/signUp";
@@ -11,14 +11,15 @@ import Voir from "./pages/voir";
 import Calendrier from "./pages/calendrier";
 import Contact from "./pages/contact";
 import Accueil from "./pages/Accueil";
-import { Children } from "react";
+import Layout from "./pages/layout";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Layout />}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route path="/taches" element={<Taches />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>

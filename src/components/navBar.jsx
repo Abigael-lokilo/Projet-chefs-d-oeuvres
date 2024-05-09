@@ -1,8 +1,9 @@
+import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div>
       <header className=" border-2 border-black-500">
-        <div className="container  mx-auto flex items-center justify-between py-7">
+        <div className="container  mx-auto flex items-center justify-between py-4 gap-4">
           <a
             href="/"
             class=" text-3xl font-bold text-gray-800absolute top-0 right-0s"
@@ -10,80 +11,67 @@ function NavBar() {
             <img
               src="assets/Wedding Planning By Lkl (1).png"
               alt=""
-              className=" h-24"
+              className=" w-14"
             />
           </a>
 
-          <nav>
-            <ul className=" bg-white-500 h-16 md:h-20 lg:h-24 flex justify-between items-center">
-              <li>
-                <a
-                  href="/"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  ACCUEIL
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/taches"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  TACHES
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/listedesinvités"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  LISTE DES INVITES
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/Salles"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  SALLES
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/calendrier"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  CALENDRIER
-                </a>
-              </li>
+          <div className=" bg-white-500 h-16 md:h-20 lg:h-24 flex justify-between items-center gap-4">
+            <NavLink
+              to="/home"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Accueil
+            </NavLink>
 
-              <li>
-                <a
-                  href="/login"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  LOGIN
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/signup"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  SIGN UP
-                </a>
-              </li>
+            <NavLink
+              to="/taches"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Taches
+            </NavLink>
 
-              <li>
-                <a
-                  href="/contact"
-                  className="nav-link px-2 py-1 rounded-md text-gray-800 hover:bg-gray-100"
-                >
-                  CONTACT
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <NavLink
+              to="/invités"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Invités
+            </NavLink>
+
+            <NavLink
+              to="/salles"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Salles
+            </NavLink>
+
+            <NavLink
+              to="/calendrier"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Calendrier
+            </NavLink>
+
+            <NavLink
+              to="/login"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Login
+            </NavLink>
+
+            <NavLink
+              to="/sign up"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Sign Up
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              className="font-bold text-xl inline-block duration-200 px-2 py-2 rounded-md text-gray-800 hover:bg-gray-100"
+            >
+              Contact
+            </NavLink>
+          </div>
         </div>
       </header>
     </div>
