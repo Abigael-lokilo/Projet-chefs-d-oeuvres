@@ -89,7 +89,7 @@ function ListeDesInvités() {
 
             <button
               type="submit"
-              class="bg-green-500 text-white font-bold py-2 px-4 rounded-md mt-4"
+              class="bg-[#19381f] text-white font-bold py-2 px-4 rounded-md mt-4"
             >
               Ajouter un invité
             </button>

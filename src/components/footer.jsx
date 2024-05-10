@@ -1,79 +1,42 @@
-function Footer() {
+import React from "react";
+
+const Footer = () => {
   return (
-    <>
-      <footer>
-        <div class="footer">
-          <a
-            href="/"
-            class=" text-3xl font-bold text-gray-800absolute top-0 right-0s"
-          >
-            <img
-              src="assets/Wedding Planning By Lkl (1).png"
-              alt=""
-              className=" h-25"
-            />
+    <footer className="bg-[#19381f] text-black py-8">
+      {" "}
+      {/* Couleur d'arrière-plan et espacement vertical */}
+      <div className="container mx-auto text-center">
+        {" "}
+        {/* Centrer le contenu */}
+        <div className="flex justify-center gap-6">
+          {" "}
+          {/* Flex pour alignement et espacement */}
+          <a href="#home" className="hover:text-gray-400">
+            Accueil
           </a>
-          <nav class="space-x-4">
-            <h1 class="text-1xl font-bold text-center mb-4">lien rapides</h1>
-            <a href="#" class=" flex text-black text-sm hover:text-gray-300">
-              Accueil
-            </a>
-            <a href="#" class=" flex text-black text-sm hover:text-gray-300">
-              Taches
-            </a>
-            <a href="#" class="flex text-black text-sm hover:text-gray-300">
-              Listes des invités
-            </a>
-            <a href="#" class="flex text-black text-sm hover:text-gray-300">
-              Salles
-            </a>
-            <a href="#" class="text-black text-sm hover:text-gray-300">
-              Calendrier
-            </a>
-            <a href="#" class="flex text-black text-sm hover:text-gray-300">
-              Login
-            </a>
-            <a href="#" class="flex text-black text-sm hover:text-gray-300">
-              Sign Up
-            </a>
-            <a href="#" class="flex text-black text-sm hover:text-gray-300">
-              Contact
-            </a>
-          </nav>
-          <div>
-            <a href="#" class=" flex text-black text-sm hover:text-gray-300">
-              <div class="contact">
-                <h1 class="text-1xl font-bold text-center mb-4">Réseaux</h1>
-                <a href="#">
-                  <img src="src/assets/logo fac.png" alt="" />
-                  Facebook
-                </a>
-                <a href="#">
-                  <img src="src/assets/logo watsapp.jpeg" alt="" />
-                  Watsapp
-                </a>
-                <a href="#">
-                  <img src="src/assets/loso inst.jpeg" alt="" />
-                  Instagram
-                </a>
-                <a href="#">
-                  <img src="src/assets/logo lin.png" alt="" />
-                  linkedin
-                </a>
-              </div>
-            </a>
-          </div>
-          <div class="flex text-blacktext-sm">
-            <p>&copy; 2024 Wedding Planning By Lkl</p>
-            <a
-              href="mailto:info@yourcompany.com"
-              class="flex text-black hover:text-gray-300"
-            ></a>
-          </div>
+          <a href="#about" className="hover:text-gray-400">
+            taches
+          </a>
+          <a href="#contact" className="hover:text-gray-400">
+            invités
+          </a>
+          <a href="#contact" className="hover:text-gray-400">
+            salles
+          </a>
+          <a href="#contact" className="hover:text-gray-400">
+            Calendrier
+          </a>
+          <a href="#contact" className="hover:text-gray-400">
+            Contact
+          </a>
         </div>
-      </footer>
-    </>
+        <p className="mt-6">
+          © 2024 wedding planning By Lkl. Nous sommes là pour vous.
+        </p>{" "}
+        {/* Texte au centre */}
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

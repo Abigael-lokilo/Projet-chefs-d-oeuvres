@@ -47,7 +47,7 @@ function Taches() {
             <div class="mt-4">
               <button
                 id="ajouter"
-                class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                class="bg-[#19381f] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               >
                 Ajouter
               </button>

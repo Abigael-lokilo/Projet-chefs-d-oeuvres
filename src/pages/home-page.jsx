@@ -1,7 +1,6 @@
 import HeroSection from "../components/heroSection";
 
 import Baner from "../components/baner";
-import Footer from "../components/footer";
 
 function Home() {
   return (
@@ -10,7 +9,6 @@ function Home() {
         <HeroSection />
 
         <Baner />
-        <Footer />
       </div>
     </>
   );

@@ -1,13 +1,13 @@
 function Baner() {
   return (
     <div className="flex items-center justify-center">
-      <div class="banner container py-10">
+      <div className="banner container py-10">
         <div className="flex flex-col justify-center gap-6">
           <h1 className="font-semibold sm:text-2xl text-white ">
             L'amour ne connait pas la distance...
           </h1>
         </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-10">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-§s p-10">
           <div className="rounded-full overflow-hidden border  border-white p-5 text-center">
             <h1 className="text-2xl">1</h1>
             <p className="">
