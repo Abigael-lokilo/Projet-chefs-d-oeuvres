@@ -1,6 +1,7 @@
 import HeroSection from "../components/heroSection";
 
 import Baner from "../components/baner";
+import Reservation from "../components/reservation";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <HeroSection />
 
         <Baner />
+        <Reservation />
       </div>
     </>
   );

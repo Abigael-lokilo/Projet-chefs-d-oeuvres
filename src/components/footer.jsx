@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#19381f] text-black py-8">
+    <footer className="bg-[#19381f] m-2 text-white py-8">
       {" "}
       {/* Couleur d'arrière-plan et espacement vertical */}
       <div className="container mx-auto text-center">
